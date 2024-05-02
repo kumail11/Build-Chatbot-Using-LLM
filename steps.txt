@@ -1,0 +1,19 @@
+Steps:
+
+1): By using OpenAI API, I have created a user friendly application where user can give input in the form of natural language and the application
+will give response based on the user input.
+
+2): After that, I have modify the application according to instruction where I can get the user input then convert this input into vector embeddings
+and store it in local database.
+
+3): After that, I have created some dataset about knowledge where questions and their knowlegde is stored in the vectorize form.
+
+4): After that, I have compare the user input with the knowledge database and checks if it's exists then send this user input to LLM model
+for generating autonomous response.
+
+
+Learning Outcomes:
+
+1): I have tried to create advanced vector database like: chromaDB, Pinecone etc.
+
+2): Pinecone implementation code is stored in test.py file.

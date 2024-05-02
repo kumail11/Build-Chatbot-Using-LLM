@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>QnA BOT</h1>
+
+
+    <form id="userInputForm">
+        <label for="userInput">Enter your question:</label>
+        <input type="text" id="userInput" name="user_input">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="botResponse"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#userInputForm').submit(function(event) {
+                event.preventDefault();
+                var userInput = $('#userInput').val();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/natural_response',
+                    data: {user_input: userInput},
+                    success: function(response) {
+                        $('#botResponse').text(response.bot_response);
+                    }
+                });
+            });
+        });
+    </script>
+
+    
+</body>
+</html>

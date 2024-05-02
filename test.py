@@ -4,7 +4,7 @@
 # from pinecone import Pinecone
 
 
-# PINECONE_API_KEY = '1f5cb53c-d350-4c6c-8a26-a901582bb50d'
+# PINECONE_API_KEY = ''
 # # os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 # pinecone = Pinecone(api_key=PINECONE_API_KEY)
 
@@ -149,10 +149,10 @@
 
 
 # # client = OpenAI(
-# #     api_key = os.environ.get('sk-proj-zyvt3vAqWx2dqYOXLGkPT3BlbkFJ74ehFpLtbywzivlKy8R0')
+# #     api_key = os.environ.get('')
 # # )
-# # openai.api_key = "sk-proj-zyvt3vAqWx2dqYOXLGkPT3BlbkFJ74ehFpLtbywzivlKy8R0"
-# # openai.api_key = os.getenv('sk-proj-zyvt3vAqWx2dqYOXLGkPT3BlbkFJ74ehFpLtbywzivlKy8R0')
+# # openai.api_key = ""
+# # openai.api_key = os.getenv('')
 
 
 # def compute_embeddings(text_data):
